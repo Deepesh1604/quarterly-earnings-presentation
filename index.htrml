@@ -1,0 +1,352 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quarterly Earnings Report - Q3 2024</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/dist/theme/white.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/plugin/highlight/monokai.css">
+    <style>
+        .reveal .footer {
+            position: absolute;
+            bottom: 1em;
+            left: 1em;
+            font-size: 0.5em;
+            color: #666;
+        }
+        .financial-highlight {
+            color: #2E8B57;
+            font-weight: bold;
+        }
+        .risk-highlight {
+            color: #DC143C;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <!-- Title Slide -->
+            <section>
+                <h1>Quarterly Earnings Report</h1>
+                <h3>Q3 2024 Financial Results</h3>
+                <p>
+                    <small>Prepared by: Technical Consultant</small><br>
+                    <small>Email: <a href="mailto:22f2001290@ds.study.iitm.ac.in">22f2001290@ds.study.iitm.ac.in</a></small><br>
+                    <small>Date: August 2024</small>
+                </p>
+                <aside class="notes">
+                    Welcome everyone to our Q3 2024 earnings presentation. 
+                    Today we'll cover our financial performance, key metrics, 
+                    and future outlook. The presentation will take approximately 20 minutes.
+                </aside>
+            </section>
+
+            <!-- Executive Summary - Markdown -->
+            <section data-markdown>
+                <textarea data-template>
+                    ## Executive Summary
+                    
+                    ### Key Highlights
+                    
+                    * **Revenue Growth**: 15.2% YoY increase
+                    * **Net Income**: $2.4B (+8.7% QoQ)
+                    * **ROE**: 14.8% (industry leading)
+                    * **Digital Transformation**: 85% completion
+                    
+                    ### Strategic Initiatives
+                    
+                    - Enhanced risk management systems
+                    - Expanded digital banking services
+                    - Sustainable finance portfolio growth
+                    
+                    ---
+                    
+                    *All figures are preliminary and subject to audit*
+                </textarea>
+                <aside class="notes">
+                    This slide provides a high-level overview of our Q3 performance. 
+                    Note the strong revenue growth and our leadership position in ROE. 
+                    The digital transformation is nearly complete, positioning us well for future growth.
+                </aside>
+            </section>
+
+            <!-- Financial Metrics with Fragments -->
+            <section>
+                <h2>Key Financial Metrics</h2>
+                <div class="fragment fade-in-then-semi-out">
+                    <h3>Revenue Analysis</h3>
+                    <ul>
+                        <li class="fragment highlight-current-blue">Total Revenue: <span class="financial-highlight">$12.8B</span></li>
+                        <li class="fragment highlight-current-blue">Net Interest Income: <span class="financial-highlight">$8.2B</span></li>
+                        <li class="fragment highlight-current-blue">Fee Income: <span class="financial-highlight">$4.6B</span></li>
+                    </ul>
+                </div>
+                <div class="fragment fade-in">
+                    <h3>Profitability Ratios</h3>
+                    <ul>
+                        <li class="fragment">Return on Assets (ROA): <strong>1.2%</strong></li>
+                        <li class="fragment">Return on Equity (ROE): <strong>14.8%</strong></li>
+                        <li class="fragment">Net Interest Margin: <strong>3.4%</strong></li>
+                    </ul>
+                </div>
+                <aside class="notes">
+                    Walk through each metric slowly. Emphasize the strong ROE performance 
+                    compared to industry average of 10.2%. The NIM improvement reflects 
+                    better asset-liability management.
+                </aside>
+            </section>
+
+            <!-- Risk Assessment with Code -->
+            <section>
+                <h2>Risk Assessment Model</h2>
+                <p>Our proprietary risk calculation algorithm:</p>
+                <pre><code data-trim data-noescape class="python">
+def calculate_var(portfolio_value, confidence_level=0.95, time_horizon=1):
+    """
+    Calculate Value at Risk using Monte Carlo simulation
+    """
+    import numpy as np
+    
+    # Historical volatility (annualized)
+    volatility = 0.18
+    
+    # Generate random returns
+    returns = np.random.normal(0, volatility/np.sqrt(252), 10000)
+    
+    # Calculate portfolio returns
+    portfolio_returns = portfolio_value * returns
+    
+    # Calculate VaR at specified confidence level
+    var = np.percentile(portfolio_returns, (1 - confidence_level) * 100)
+    
+    return abs(var)
+
+# Current portfolio VaR (95% confidence)
+current_var = calculate_var(portfolio_value=50_000_000_000)
+print(f"Daily VaR (95%): ${current_var:,.2f}")
+                </code></pre>
+                <p class="fragment">Current Daily VaR (95%): <span class="risk-highlight">$125.7M</span></p>
+                <aside class="notes">
+                    This shows our risk management capabilities. The VaR model helps us 
+                    understand potential losses. Our current VaR of $125.7M represents 
+                    0.25% of our portfolio, well within risk tolerance.
+                </aside>
+            </section>
+
+            <!-- Mathematical Models -->
+            <section>
+                <h2>Financial Mathematics</h2>
+                <h3>Capital Adequacy Ratio</h3>
+                <p>Our Tier 1 Capital Ratio calculation:</p>
+                <div class="fragment">
+                    $$\text{Tier 1 Ratio} = \frac{\text{Tier 1 Capital}}{\text{Risk-Weighted Assets}} \times 100\%$$
+                </div>
+                <div class="fragment">
+                    $$\text{Tier 1 Ratio} = \frac{\$8.2B}{\$52.4B} \times 100\% = 15.6\%$$
+                </div>
+                <br>
+                <h3 class="fragment">Compound Annual Growth Rate</h3>
+                <div class="fragment">
+                    $$CAGR = \left(\frac{\text{Ending Value}}{\text{Beginning Value}}\right)^{\frac{1}{n}} - 1$$
+                </div>
+                <div class="fragment">
+                    <p>3-Year Revenue CAGR: <span class="financial-highlight">12.4%</span></p>
+                </div>
+                <aside class="notes">
+                    Our Tier 1 ratio of 15.6% exceeds regulatory requirements by a comfortable margin. 
+                    The 3-year CAGR demonstrates consistent growth trajectory above industry averages.
+                </aside>
+            </section>
+
+            <!-- Technology Implementation -->
+            <section>
+                <h2>Digital Transformation Progress</h2>
+                <div class="fragment fade-in-then-semi-out">
+                    <h3>API Response Time Optimization</h3>
+                    <pre><code data-trim data-noescape class="javascript">
+// Microservices performance monitoring
+const performanceMetrics = {
+    'account-service': {
+        avgResponseTime: 45, // ms
+        uptime: 99.97,
+        throughput: 15000 // requests/minute
+    },
+    'payment-service': {
+        avgResponseTime: 32, // ms
+        uptime: 99.99,
+        throughput: 25000 // requests/minute
+    },
+    'risk-engine': {
+        avgResponseTime: 120, // ms
+        uptime: 99.95,
+        throughput: 5000 // requests/minute
+    }
+};
+
+// Performance threshold validation
+Object.entries(performanceMetrics).forEach(([service, metrics]) => {
+    if (metrics.avgResponseTime > 100 || metrics.uptime < 99.9) {
+        console.warn(`⚠️  ${service} needs attention`);
+    }
+});
+                    </code></pre>
+                </div>
+                <div class="fragment">
+                    <p><strong>System Reliability:</strong> 99.97% average uptime across all services</p>
+                    <p><strong>Performance:</strong> Sub-50ms response times for critical operations</p>
+                </div>
+                <aside class="notes">
+                    Our digital infrastructure is performing exceptionally well. 
+                    The sub-50ms response times put us ahead of industry standards. 
+                    This directly contributes to improved customer satisfaction scores.
+                </aside>
+            </section>
+
+            <!-- Market Outlook -->
+            <section>
+                <section>
+                    <h2>Market Outlook & Strategy</h2>
+                    <div class="fragment">
+                        <h3>Economic Environment</h3>
+                        <ul>
+                            <li class="fragment">Interest Rate Environment: <strong>Stabilizing</strong></li>
+                            <li class="fragment">Credit Demand: <strong>Moderate Growth</strong></li>
+                            <li class="fragment">Regulatory Climate: <strong>Supportive</strong></li>
+                        </ul>
+                    </div>
+                    <div class="fragment">
+                        <h3>Strategic Priorities</h3>
+                        <ol>
+                            <li class="fragment">Expand digital banking capabilities</li>
+                            <li class="fragment">Enhance ESG product offerings</li>
+                            <li class="fragment">Optimize operational efficiency</li>
+                        </ol>
+                    </div>
+                    <p class="fragment"><small>↓ Scroll down for detailed projections</small></p>
+                    <aside class="notes">
+                        The market conditions are favorable for our growth strategy. 
+                        Pay special attention to our ESG initiatives as they're becoming 
+                        increasingly important to institutional clients.
+                    </aside>
+                </section>
+
+                <!-- Nested slide for projections -->
+                <section>
+                    <h3>2025 Financial Projections</h3>
+                    <table class="fragment">
+                        <thead>
+                            <tr>
+                                <th>Metric</th>
+                                <th>Q4 2024E</th>
+                                <th>2025E</th>
+                                <th>Growth</th>
+                            </tr>
+                        </thead>
+                        <tbody class="fragment">
+                            <tr>
+                                <td>Revenue</td>
+                                <td>$13.2B</td>
+                                <td>$54.8B</td>
+                                <td class="financial-highlight">+7.2%</td>
+                            </tr>
+                            <tr>
+                                <td>Net Income</td>
+                                <td>$2.6B</td>
+                                <td>$10.8B</td>
+                                <td class="financial-highlight">+12.5%</td>
+                            </tr>
+                            <tr>
+                                <td>ROE</td>
+                                <td>15.1%</td>
+                                <td>15.8%</td>
+                                <td class="financial-highlight">+70bps</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <aside class="notes">
+                        These projections assume stable economic conditions. 
+                        The ROE improvement reflects operational efficiency gains 
+                        from our digital transformation initiatives.
+                    </aside>
+                </section>
+            </section>
+
+            <!-- Q&A Section -->
+            <section>
+                <h1>Questions & Discussion</h1>
+                <br>
+                <div class="fragment">
+                    <h3>Contact Information</h3>
+                    <p>
+                        <strong>Technical Consultant</strong><br>
+                        Email: <a href="mailto:22f2001290@ds.study.iitm.ac.in">22f2001290@ds.study.iitm.ac.in</a><br>
+                        Financial Institution - Technology Division
+                    </p>
+                </div>
+                <br>
+                <p class="fragment"><em>Thank you for your attention!</em></p>
+                <aside class="notes">
+                    Open the floor for questions. Be prepared to discuss:
+                    1. Detailed breakdown of digital transformation costs
+                    2. Timeline for ESG product rollout
+                    3. Competitive positioning analysis
+                    4. Regulatory compliance updates
+                </aside>
+            </section>
+        </div>
+        
+        <!-- Footer -->
+        <div class="footer">
+            Quarterly Earnings Report Q3 2024 | Confidential
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/dist/reveal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/plugin/notes/notes.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/plugin/markdown/markdown.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/plugin/highlight/highlight.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/plugin/math/math.js"></script>
+    
+    <script>
+        Reveal.initialize({
+            hash: true,
+            transition: 'slide',
+            transitionSpeed: 'default',
+            backgroundTransition: 'fade',
+            
+            // Plugin configuration
+            plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX ],
+            
+            // Math plugin configuration
+            math: {
+                mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js',
+                config: 'TeX-AMS_HTML-full',
+                TeX: {
+                    Macros: {
+                        RR: "{\\bf R}",
+                        bold: ["{\\bf #1}", 1]
+                    }
+                }
+            },
+            
+            // Control configuration
+            controls: true,
+            progress: true,
+            center: true,
+            touch: true,
+            loop: false,
+            
+            // Keyboard shortcuts
+            keyboard: true
+        });
+        
+        // Add custom event listeners
+        Reveal.on('slidechanged', event => {
+            console.log(`Moved to slide: ${event.indexh}.${event.indexv}`);
+        });
+    </script>
+</body>
+</html>
